@@ -3,12 +3,8 @@ local informacion = require 'assets/scripts/informacion'
 local respuestas = {}
 
 local function responderEntrega(dato,ubicacion)
-	if dato == 'hola' then
-		return 'hola,como estas?'
-	elseif dato == 'bien' then
-		return 'me alegro por ti'
-	elseif string.find(dato,"ir ") ~= nil then
-		return informacion.descripcion(dato)
+	if string.find(dato,"ir ") ~= nil then
+		return informacion.descripcion(dato,ubicacion)
 	else
 		return ''
 	end

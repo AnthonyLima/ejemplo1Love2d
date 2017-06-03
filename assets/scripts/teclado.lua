@@ -39,58 +39,6 @@ function teclado.keypressed(key, scancode, isrepeat)
 		escribir = ''
 	elseif string.find('abcdefghijklmnopqrstuvwxyz',key) ~= nil then
 		escribir = escribir .. key
-	--[[elseif key == 'a' then
-		escribir = escribir .. 'a'
-	elseif key == 'b' then
-		escribir = escribir .. 'b'
-	elseif key == 'c' then
-		escribir = escribir .. 'c'
-	elseif key == 'd' then
-		escribir = escribir .. 'd'
-	elseif key == 'e' then
-		escribir = escribir .. 'e'
-	elseif key == 'f' then
-		escribir = escribir .. 'f'
-	elseif key == 'g' then
-		escribir = escribir .. 'g'
-	elseif key == 'h' then
-		escribir = escribir .. 'h'
-	elseif key == 'i' then
-		escribir = escribir .. 'i'
-	elseif key == 'j' then
-		escribir = escribir .. 'j'
-	elseif key == 'k' then
-		escribir = escribir .. 'k'
-	elseif key == 'l' then
-		escribir = escribir .. 'l'
-	elseif key == 'm' then
-		escribir = escribir .. 'm'
-	elseif key == 'n' then
-		escribir = escribir .. 'n'
-	elseif key == 'o' then
-		escribir = escribir .. 'o'
-	elseif key == 'p' then
-		escribir = escribir .. 'p'
-	elseif key == 'q' then
-		escribir = escribir .. 'q'
-	elseif key == 'r' then
-		escribir = escribir .. 'r'
-	elseif key == 's' then
-		escribir = escribir .. 's'
-	elseif key == 't' then
-		escribir = escribir .. 't'
-	elseif key == 'u' then
-		escribir = escribir .. 'u'
-	elseif key == 'v' then
-		escribir = escribir .. 'v'
-	elseif key == 'w' then
-		escribir = escribir .. 'w'
-	elseif key == 'x' then
-		escribir = escribir .. 'x'
-	elseif key == 'y' then
-		escribir = escribir .. 'y'
-	elseif key == 'z' then
-		escribir = escribir .. 'z']]
 	elseif key == 'space' then
 		escribir = escribir .. ' '
 	end	
