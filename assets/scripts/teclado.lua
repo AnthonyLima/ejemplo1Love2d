@@ -37,7 +37,9 @@ function teclado.keypressed(key, scancode, isrepeat)
 	if key == 'return' then
 		teclado.palabra = escribir
 		escribir = ''
-	elseif key == 'a' then
+	elseif string.find('abcdefghijklmnopqrstuvwxyz',key) ~= nil then
+		escribir = escribir .. key
+	--[[elseif key == 'a' then
 		escribir = escribir .. 'a'
 	elseif key == 'b' then
 		escribir = escribir .. 'b'
@@ -88,7 +90,7 @@ function teclado.keypressed(key, scancode, isrepeat)
 	elseif key == 'y' then
 		escribir = escribir .. 'y'
 	elseif key == 'z' then
-		escribir = escribir .. 'z'
+		escribir = escribir .. 'z']]
 	elseif key == 'space' then
 		escribir = escribir .. ' '
 	end	
