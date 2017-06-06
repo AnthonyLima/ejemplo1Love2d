@@ -1,15 +1,13 @@
 local informacion  = {}
 
 local function descripcion(dato,ubicacion)
-	--aqui se podra agregar mas contenido referente a donde quieres ir y la ubicacion actual
-	if string.find(dato," norte") == 3 then
-		return 'parece no haber nada'
-	elseif string.find(dato," sur") == 3 then
-		return 'si haces eso te puedes caer'
-	elseif string.find(dato," este") == 3 then
-		return 'este? este quien?'
-	elseif string.find(dato," oeste") == 3 then
-		return 'alli solo van los vaqueros'
+	--aqui se pone ayuda para saber como jugar
+	--tambien se pone la ubicacion por que en el futuro la ayuda tambien
+	--puede ser referente a donde te encuentres
+	if string.find(dato," comandos") == 6 then
+		return 'comandos: ir, usar, examinar(tanto objetos como lugares).'
+	elseif string.find(dato," juego") == 6 then
+		return 'Hola, este es un juego de texto donde practico mis conocimientos en Lua, no hay mucho que decir.'
 	else
 		return ''
 	end

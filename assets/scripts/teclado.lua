@@ -1,4 +1,5 @@
 local respuestas = require 'assets/scripts/respuestas'
+local mapa = require 'assets/scripts/mapa'
 
 local teclado = {}
 local escribir = ''
@@ -10,6 +11,8 @@ function teclado.load()
 	teclado.palabra = ''
 	teclado.img = {}
 	teclado.ubi = 1 --ubicacion del personaje en el mapa guarda un numero para saber donde esta
+
+	
 end
 
 function teclado.update(dt)
